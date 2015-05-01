@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
         <title>Popppular</title>
-        <link>https://rawgit.com/angusjune/popppular/master/updater/Appcast.xml</link>
+        <link>https://raw.githubusercontent.com/angusjune/Popppular/master/updater/Appcast.xml</link>
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
             <title>Version 6.23</title>
-            <sparkle:releaseNotesLink>https://rawgit.com/HackPlan/quark-shell-mac/master/updater/ReleaseNotes.html</sparkle:releaseNotesLink>
+            <sparkle:releaseNotesLink>https://raw.githubusercontent.com/angusjune/Popppular/master/updater/ReleaseNotes.html</sparkle:releaseNotesLink>
             <pubDate>Fri, 01 May 2015 00:00:00 +0800</pubDate>
-            <enclosure url="https://github.com/angusjune/popppular/archive/v0.8.zip" sparkle:version="2" length="1072667" type="application/octet-stream" />
+            <enclosure url="https://github.com/angusjune/Popppular/releases/download/v0.8/popppular.zip" sparkle:version="2" length="1072667" type="application/octet-stream" />
             <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
         </item>
     </channel>
