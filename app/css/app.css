@@ -184,8 +184,8 @@ a {
 
 .shot {
   position: relative;
-  width: 50%;
-  min-height: 116px;
+  width: 100%;
+  min-height: 238px;
   border: 2px solid #fff;
   cursor: pointer;
   background: url(../img/loading.gif) #fff no-repeat center;

@@ -292,7 +292,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A91F9DA18E2530B00AA8B7E /* Build configuration list for PBXProject "quark-shell" */;
+			buildConfigurationList = 1A91F9DA18E2530B00AA8B7E /* Build configuration list for PBXProject "popppular" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -488,7 +488,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -558,7 +558,7 @@
 		1A91FA1418E2530C00AA8B7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quark-shell.app/Contents/MacOS/quark-shell";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quark-shell.app/Contents/MacOS/popppular";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -580,7 +580,7 @@
 		1A91FA1518E2530C00AA8B7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quark-shell.app/Contents/MacOS/quark-shell";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quark-shell.app/Contents/MacOS/popppular";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -598,7 +598,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A91F9DA18E2530B00AA8B7E /* Build configuration list for PBXProject "quark-shell" */ = {
+		1A91F9DA18E2530B00AA8B7E /* Build configuration list for PBXProject "popppular" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A91FA0E18E2530C00AA8B7E /* Debug */,

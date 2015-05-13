@@ -97,7 +97,9 @@ function add(page, from) {
 
         // Get file type of the image
         extension = largeImage.replace(/^.*\./, '');
-        imageType = 'teaser';
+//        imageType = 'teaser';
+        imageType = 'medium';
+
 
         // allShots.push(id);
 
@@ -118,7 +120,7 @@ function add(page, from) {
 
           var img = $('<img/>', {
             id: 'id' + id,
-            src: teaserImage,
+            src: mediumImage,
             class: 'shot-img'
           });
 
