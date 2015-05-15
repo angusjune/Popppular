@@ -3,7 +3,7 @@ Dribbble popular shots right at your MenuBar.
 
 [Download popppular.app][dl]
 
-## Latest updated on
+### Latest updated on
 May 15, 2015. v0.8.1
 
 ### How to install?
