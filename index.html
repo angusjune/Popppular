@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Popppular - Dribbble popular shots right at your menubar.</title>
+    <link rel="icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/app.min.css"/>
+</head>
+<body>
+<section class="hero">
+    <div class="container">
+        <div class="grid-12">
+
+            <header class="header">
+                <div class="logo-wrapper">
+                    <h1 class="logo">Popppular</h1>
+                    <p class="section__intro">Dribbble populars at your menubar.</p>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li class="dl-link"><a href="https://github.com/angusjune/Popppular/releases/latest" target="_blank">Download</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="https://rawgit.com/angusjune/Popppular/master/updater/ReleaseNotes.html" target="_blank">Changelog</a></li>
+                        <li><a href="https://github.com/angusjune/Popppular" target="_blank">GitHub</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        </div>
+    </div>
+
+    <div class="mac">
+        <div class="mac__element mac__element--body"></div>
+        <div class="mac__element mac__element--screen"></div>
+        <div class="mac__element mac__element--menubar"><a href="#" class="icon-ball"></a></div>
+
+        <div class="interface-wrapper">
+            <div class="interface" data-sr="wait 1s, enter bottom move 24px">
+                <img src="img/interface@2x.png" alt="Interface"/>
+                <div class="interface__icon-list">
+                    <span class="interface__icon interface__icon--pin"></span>
+                    <span class="interface__icon interface__icon--refresh"></span>
+                    <span class="interface__icon interface__icon--pref"></span>
+                    <span class="interface__icon interface__icon--quit"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="features" id="features">
+
+    <div class="container">
+        <div class="grid-12">
+            <h2 class="section__title">Feeetures</h2>
+            <p class="section__intro">This is not a bug, this is a feature.</p>
+        </div>
+    </div>
+
+    <div class="container smaller">
+
+        <div class="grid-4 grid-m-12">
+            <div class="feature feature--1">
+                <div class="feature__img">
+                    <em class="window feature__element">
+                        <em class="pin feature__element"></em>
+                    </em>
+                </div>
+
+                <p class="feature__intro">Pin popup window.</p>
+            </div>
+        </div>
+
+        <div class="grid-4 grid-m-12">
+            <div class="feature feature--2">
+                <div class="feature__img">
+                    <em class="polygon feature__element"></em>
+                    <em class="cursor feature__element"></em>
+                </div>
+
+                <p class="feature__intro">View animated gif on hover.</p>
+            </div>
+        </div>
+
+        <div class="grid-4 grid-m-12">
+            <div class="feature feature--3">
+                <div class="feature__img">
+                    <em class="rubber-ball feature__element"></em>
+                </div>
+                <p class="feature__intro">So minimal that there are no more features.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="//use.typekit.net/dry7yeq.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<script src="js/app.min.js"></script>
+<script>
+    window.sr = new scrollReveal();
+</script>
+</body>
+</html>

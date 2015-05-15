@@ -1,0 +1,524 @@
+@charset "UTF-8";
+@import "normalize";
+@import "rwdgrid";
+
+$pink: #EA4C89;
+$dark-gray: #323232;
+$light-gray: #999;
+
+//* {
+//  box-sizing: border-box;
+//}
+
+html {
+  font-size: 50%;
+}
+
+body {
+  font-family: avenir, 'avenir next', 'helvetica neue', helvetica, arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container.smaller {
+  max-width: 980px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 55rem;
+  background-color: $dark-gray;
+  //background: linear-gradient(top, #FE6DA5, #EC4988);
+}
+
+.header {
+  padding-top: 1.4rem;
+}
+
+//.logo-wrapper {
+//  text-align: center;
+//}
+
+.logo {
+  font-family: 'sarina', cursive;
+  margin: 0;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+.section__intro {
+  margin: 0;
+  color: $light-gray;
+  font-size: 1.6rem;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+}
+
+.nav {
+  max-width: 40rem;
+  margin: auto;
+  padding-top: 1.4rem;
+
+  ul {
+    //margin: 0;
+  }
+
+  li {
+    font-size: 1.8rem;
+    float: left;
+    text-align: center;
+    width: 25%;
+    //margin-right: 1rem;
+  }
+
+  a {
+    color: $light-gray;
+  }
+
+  .dl-link a {
+    color: $pink;
+  }
+}
+
+$mac-height: 38rem;
+$mac-body-width: 100%;
+$mac-screen-offset: 2rem;
+$mac-screen-offset-top: 4.4rem;
+$mac-screen-width: calc(#{$mac-body-width} - #{$mac-screen-offset * 2});
+$mac-screen-height: calc(#{$mac-height} - #{$mac-screen-offset-top});
+$mac-border: 2px solid #636363;
+
+.mac {
+  width: 100%;
+  height: $mac-height;
+  margin: 0 auto;
+  //padding: 0 1.5rem;
+  max-width: 980px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+
+  &__element {
+    position: absolute;
+
+    &--menubar {
+      width: $mac-screen-width;
+      height: 22px;
+      top: $mac-screen-offset-top;
+      left: $mac-screen-offset;
+      background-color: #484848;
+      border: $mac-border;
+      border-bottom: 0;
+    }
+
+    &--body {
+      width: $mac-body-width;
+      height: 100%;
+      border-radius: 4rem 4rem 0 0;
+      background-color: transparent;
+      border: $mac-border;
+      border-bottom: 0;
+    }
+
+    &--screen {
+      width: $mac-screen-width;
+      height: $mac-screen-height;
+      background-color: transparent;
+      border: $mac-border;
+      border-bottom: 0;
+      left: $mac-screen-offset;
+      bottom: 0;
+    }
+  }
+
+  .icon-ball {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../img/menubar-ball.svg") no-repeat center;
+    background-size: 15px;
+    margin: -2px auto 0;
+    padding: 3px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-top: $mac-border;
+    }
+  }
+}
+
+.interface-wrapper {
+  position: absolute;
+  top: $mac-screen-offset-top;
+  margin-top: 25px;
+  //top: 238px;
+  width: 100%;
+}
+
+.interface {
+  width: 100%;
+  max-width: 334px;
+  height: 286px;
+  //background: url("../img/interface@2x.png") no-repeat;
+  //background-size: 334px 286px;
+  margin: auto;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.interface__icon-list {
+  position: absolute;
+  top: 16px;
+  width: 100%;
+  max-width: 312px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  //margin: auto;
+}
+
+.interface__icon {
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: transparent no-repeat center;
+  background-size: 20px;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 8;
+  }
+
+  &--pin {
+    background-image: url(../img/pin.svg);
+
+    &:hover {
+      animation: jump 0.3s 2;
+    }
+  }
+
+  &--refresh {
+    background-image: url(../img/refresh.svg);
+    left: 35px;
+
+    &:hover {
+      animation: rotation 0.6s 1;
+    }
+  }
+
+  &--pref {
+    background-image: url(../img/pref.svg);
+    right: 35px;
+
+    &:hover {
+      animation: look 0.3s 2;
+    }
+  }
+
+  &--quit {
+    background-image: url(../img/quit.svg);
+    right: 0;
+
+    &:hover {
+      animation: shake 0.2s 3;
+    }
+  }
+}
+
+.section__title {
+  @extend .logo;
+  color: $dark-gray;
+}
+
+.features {
+  padding-top: 7.6rem;
+}
+
+.feature {
+
+  &__img {
+    position: relative;
+    width: 206px;
+    height: 140px;
+    margin: auto;
+    background: no-repeat bottom;
+  }
+
+  &__intro {
+    color: $dark-gray;
+    padding: 1.6rem 0;
+    text-align: center;
+  }
+
+  &__element {
+    position: absolute;
+  }
+}
+
+.cursor {
+  background: url(../img/cursor.svg) no-repeat;
+  width: 19px;
+  height: 28px;
+}
+
+.window {
+  background: url(../img/window.svg) no-repeat;
+  width: 110px;
+  height: 90px;
+  animation: tumbling 2s linear infinite;
+  top: 28px;
+  left: 48px;
+}
+
+.pin {
+  background: url(../img/pin-pink.svg) no-repeat center;
+  width: 11px;
+  height: 21px;
+  left: 10px;
+  top: 9px;
+  opacity: 0.2;
+  animation: on-off 2s linear infinite;
+}
+
+.polygon {
+  background: url(../img/polygon.svg) no-repeat center;
+  width: 41px;
+  height: 39px;
+  left: 20px;
+  top: 58px;
+  animation: rollback 2s linear infinite;
+}
+
+.rubber-ball {
+  background: url(../img/rubber-ball.svg) no-repeat;
+  width: 10px;
+  height: 10px;
+  top: -12px;
+  left: 10px;
+  animation: bounce 2s linear infinite;
+}
+
+
+
+.feature--1 {
+  .feature__img {
+    //height: 140px;
+    background-image: url(../img/feature-1.svg);
+  }
+
+  //.cursor {
+  //  left: -30px;
+  //  top: 0;
+  //}
+}
+
+.feature--2 {
+  .feature__img {
+    //height: 130px;
+    background-image: url(../img/feature-2.svg);
+  }
+
+  .cursor {
+    right: 20px;
+    top: 30px;
+  }
+}
+
+.feature--3 {
+  .feature__img {
+    overflow: hidden;
+    //height: 130px;
+    background-image: url(../img/feature-3.svg);
+
+  }
+}
+
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .hero {
+    height: 40rem;
+  }
+
+  .logo-wrapper {
+    //text-align: left;
+  }
+
+  $mac-height: 26.5rem;
+  $mac-screen-offset: 4rem;
+  $mac-screen-width: calc(#{$mac-body-width} - #{$mac-screen-offset * 2});
+  $mac-screen-height: calc(#{$mac-height} - #{$mac-screen-offset-top});
+
+  .mac {
+    height: $mac-height;
+  }
+
+  .mac__element--screen, .mac__element--menubar  {
+    width: $mac-screen-width;
+    left: $mac-screen-offset;
+  }
+
+  .mac__element--screen {
+    height: $mac-screen-height;
+  }
+
+  .features {
+    padding-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+
+  25% {
+    transform: translateY(3px);
+  }
+
+  75% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes look {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-25deg);
+  }
+
+  75% {
+    transform: rotate(25deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(-2px);
+  }
+
+  75% {
+    transform: translateX(2px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes tumbling {
+  15% {
+    transform: translate(4px, -4px);
+  }
+
+  22% {
+    transform: translate(6px, 4px);
+  }
+
+  35% {
+    transform: translate(-2px, -4px);
+  }
+
+  50%, 100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes on-off {
+  0%, 47% {
+    opacity: 0.2;
+  }
+
+  48%, 98% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  16%, 48%, 78%  {
+    top: 85px;
+    animation-timing-function: ease-out;
+  }
+  32% {
+    top: 40px;
+    animation-timing-function: ease-in;
+  }
+  62% {
+    top: 60px;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    top: 70px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: rotate(360deg);
+    top: 85px;
+    animation-timing-function: ease-out;
+    left:100%;
+  }
+}
+
+@keyframes rollback {
+  50% {
+    transform:  translateX(130px) rotate(360deg);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform:translateX(0px) rotate(0deg);
+    animation-timing-function: ease-in-out;
+  }
+}

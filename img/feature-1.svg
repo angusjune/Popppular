@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="206px" height="130px" viewBox="0 0 206 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>feature-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FE6DA5" offset="0%"></stop>
+            <stop stop-color="#EC4988" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-236.000000, -761.000000)" fill="url(#linearGradient-1)">
+            <path d="M238,764.997336 L238,764.997336 L238,887.002664 C238,888.106326 238.894405,889 239.999622,889 L438.000378,889 C439.110657,889 440,888.109657 440,887.002664 L440,764.997336 C440,763.893674 439.105595,763 438.000378,763 L239.999622,763 C238.889343,763 238,763.890343 238,764.997336 L238,764.997336 Z M236,764.997336 C236,762.789668 237.780882,761 239.999622,761 L438.000378,761 C440.209308,761 442,762.788248 442,764.997336 L442,887.002664 C442,889.210332 440.219118,891 438.000378,891 L239.999622,891 C237.790692,891 236,889.211752 236,887.002664 L236,764.997336 L236,764.997336 Z" id="feature-1" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

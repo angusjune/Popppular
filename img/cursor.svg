@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="28px" viewBox="0 0 19 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>cursor</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FE6DA5" offset="0%"></stop>
+            <stop stop-color="#EC4988" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-779.000000, -605.000000)" fill="url(#linearGradient-1)">
+            <g id="feature2" sketch:type="MSLayerGroup" transform="translate(617.000000, 586.000000)">
+                <path d="M176,35.2 L176,35.2 L164,24 L164,40.49984 L168.10016,36.6 L171.30016,44 L173.49984,43 L170.2,35.69984 L176,35.2 Z M173.5,37.5 L176.144328,43.9947574 L170.273118,46.6638772 L167.5,40 L162,45.1623251 L162,19.3975621 L180.652404,36.8064722 L173.5,37.5 Z" id="cursor" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
