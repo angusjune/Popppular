@@ -1,14 +1,9 @@
-quark.debug = true;
+quark.debug = false;
 
-// var POP_URL = 'http://api.dribbble.com/shots/popular';
 var TOKEN = '33b696cf4ae05dd341647332eb1b5ee3dc4eb7a25bc48c2c496bb97ea3396759';
-var perPage = 50;
-// var maxPage = 2;
+var perPage = 120;
 var loading = false;
 var lock = false;
-// var page = 0;
-// var d;
-// var allShots = [];
 
 var btnPin = $('.js-pin');
 var btnQuit = $('.js-quit');
@@ -19,52 +14,15 @@ $.jribbble.setToken(TOKEN);
 
 $(function() {
   add('popular');
-
-  // addshots = setInterval(function() {
-  //
-  //   if (960 - $('.edge').offset().top > $('.container').height()) {
-  //     console.log('page: ' + page);
-  //
-  //     // page++;
-  //     add(page, 'popular');
-  //
-  //     if (page >= maxPage) {
-  //       lockAdd();
-  //       hideLoading();
-  //     }
-  //   }
-  // }, 500);
-
-  // var opened = false;
-  //
-  // // Toggle open
-  // quark.setClickAction(function() {
-  //   // console.log(opened);
-  //   if (!opened) {
-  //     opened = true;
-  //   } else {
-  //     opened = false;
-  //   }
-  // });
-
-  // Refresh every 30 min
-  // autorefresh = setInterval(function() {
-  //   if (!opened && $('.edge').offset().top == 0) {
-  //     refresh();
-  //   }
-  // }, 1800000);
-
 });
 
 /*
  * Add shots to page
  * list can be '', 'popular', 'animated', 'attachments', 'debuts', 'playoffs', 'rebounds', 'teams'
  */
-function add(list) {
-  // $('#images').data('page', page);
+function add(list, timeframe) {
   var shotsType;
   var shots;
-  // var pageURL;
 
   // Execute only when it is not loading
   if (!loading && !lock) {
@@ -74,37 +32,23 @@ function add(list) {
       shotsType = list;
     }
 
+    if (!timeframe) {
+      timeframe = '';
+    }
+
     showLoading();
 
     $.jribbble.shots(shotsType, {
       'per_page':perPage
+      ,'timeframe': timeframe
     }).then(function(res){
       createShots(res);
       hideLoading();
+      lockAdd();
     });
-
-    // var pages = pageURL + '?per_page=' + perPage + '&page=' + page;
-
-    // data = $.ajax({
-    //   type: 'GET',
-    //   url: pages,
-    //   dataType: 'jsonp',
-    //   success: function(data) {
-    //     d = data; //For debugging
-    //     createShots(data);
-    //     console.log('Loading succeeded!');
-    //   },
-    //   beforeSend: function() {
-    //     showLoading();
-    //   },
-    //   complete: function() {
-    //     hideLoading();
-    //   }
-    // });
   }
 
   function createShots(data) {
-    // console.log('data: ' + data);
 
     if (data.length > 0) {
       console.log('1st data: ');
@@ -121,7 +65,7 @@ function add(list) {
         extension = mediumImage.replace(/^.*\./, '');
         imageType = 'medium';
 
-        if (!$('#id' + id).exists()) {
+        if (!$('#id' + id).length > 0) {
 
           var img = $('<img/>', {
             id: 'id' + id,
@@ -161,73 +105,6 @@ function add(list) {
       });
       // END OF forEach
 
-
-//       for (i = 0; i < data.shots.length; i++) {
-//         var id = data.shots[i].id;
-//         var url = data.shots[i].url;
-//         var largeImage = data.shots[i].image_url;
-//         var mediumImage = data.shots[i].image_400_url;
-//         var teaserImage = data.shots[i].image_teaser_url;
-//
-//         // Get file type of the image
-//         extension = largeImage.replace(/^.*\./, '');
-// //        imageType = 'teaser';
-//         imageType = 'medium';
-//
-//
-//         // allShots.push(id);
-//
-//         // imageType = $.cookie('imagetype');
-//         // if (!imageType) {
-//         //   imageType = 'large';
-//         // }
-//
-//         // if (imageType == 'small') {
-//         //   var img1 = teaserImage;
-//         //   var img2 = largeImage;
-//         // } else {
-//         //   var img1 = largeImage;
-//         //   var img2 = teaserImage;
-//         // }
-//
-//         if (!$('#id' + id).exists()) {
-//
-//           var img = $('<img/>', {
-//             id: 'id' + id,
-//             src: mediumImage,
-//             class: 'shot-img'
-//           });
-//
-//           var a = $('<div/>', {
-//               class: 'shot ' + imageType + ' ' + extension
-//             })
-//             .append(img)
-//             .appendTo('#images')
-//             .data('html-url', url)
-//             .data('large-image', largeImage)
-//             .data('ext', extension)
-//             .mouseenter(function() {
-//               if ($(this).data('ext') == 'gif') {
-//
-//                 var gifImg = $('<img/>', {
-//                   src: $(this).data('large-image'),
-//                   class: 'large-img'
-//                 });
-//
-//                 $(this).append(gifImg);
-//               }
-//
-//             })
-//             .mouseleave(function() {
-//               $(this).find('.large-img').remove();
-//             })
-//             .click(function() {
-//               quark.openURL($(this).data('html-url'));
-//             });
-//         }
-//       }
-      // END OF LOOP
-
       if (data.length < perPage) {
         lockAdd();
       }
@@ -251,7 +128,6 @@ function unlockAdd() {
 
 function refresh() {
   $('#images').html('');
-  // page = 0;
   lock = false;
   hideLoading();
   unlockAdd();
