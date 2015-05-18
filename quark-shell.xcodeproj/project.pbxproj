@@ -281,7 +281,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = QSH;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Pomotodo;
 				TargetAttributes = {
 					1A91F9DE18E2530B00AA8B7E = {
@@ -292,7 +292,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A91F9DA18E2530B00AA8B7E /* Build configuration list for PBXProject "popppular" */;
+			buildConfigurationList = 1A91F9DA18E2530B00AA8B7E /* Build configuration list for PBXProject "quark-shell" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -488,7 +488,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -558,7 +558,7 @@
 		1A91FA1418E2530C00AA8B7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quark-shell.app/Contents/MacOS/popppular";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/popppular.app/Contents/MacOS/popppular";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -580,7 +580,7 @@
 		1A91FA1518E2530C00AA8B7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/quark-shell.app/Contents/MacOS/popppular";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/popppular.app/Contents/MacOS/popppular";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -598,7 +598,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A91F9DA18E2530B00AA8B7E /* Build configuration list for PBXProject "popppular" */ = {
+		1A91F9DA18E2530B00AA8B7E /* Build configuration list for PBXProject "quark-shell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A91FA0E18E2530C00AA8B7E /* Debug */,
