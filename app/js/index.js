@@ -1,4 +1,4 @@
-quark.debug = true;
+quark.debug = false;
 
 var TOKEN = '33b696cf4ae05dd341647332eb1b5ee3dc4eb7a25bc48c2c496bb97ea3396759';
 var perPage = 120;
