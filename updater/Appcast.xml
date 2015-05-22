@@ -8,7 +8,7 @@
         <item>
             <title>Version 0.9</title>
             <sparkle:releaseNotesLink>https://rawgit.com/angusjune/Popppular/master/updater/ReleaseNotes.html</sparkle:releaseNotesLink>
-            <pubDate>Fri, 19 May 2015 00:00:00 +0800</pubDate>
+            <pubDate>Mon, 18 May 2015 00:00:00 +0800</pubDate>
             <enclosure url="https://github.com/angusjune/Popppular/releases/download/v0.9/popppular.zip" sparkle:version="0.9" length="1072667" type="application/octet-stream" />
             <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
         </item>
