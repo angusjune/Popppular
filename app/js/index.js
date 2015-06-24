@@ -131,6 +131,7 @@ function refresh() {
   lock = false;
   hideLoading();
   unlockAdd();
+  add('popular');
 }
 
 function showLoading() {

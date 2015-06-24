@@ -5,6 +5,15 @@
         <link>https://rawgit.com/angusjune/Popppular/master/updater/Appcast.xml</link>
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
+		
+        <item>
+            <title>Version 0.9.2</title>
+            <sparkle:releaseNotesLink>https://rawgit.com/angusjune/Popppular/master/updater/ReleaseNotes.html</sparkle:releaseNotesLink>
+            <pubDate>Wed, 24 Jun 2015 00:00:00 +0800</pubDate>
+            <enclosure url="https://github.com/angusjune/Popppular/releases/download/v0.9.2/popppular.zip" sparkle:version="0.9.2" length="1072667" type="application/octet-stream" />
+            <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
+        </item>
+		
         <item>
             <title>Version 0.9</title>
             <sparkle:releaseNotesLink>https://rawgit.com/angusjune/Popppular/master/updater/ReleaseNotes.html</sparkle:releaseNotesLink>
@@ -12,6 +21,7 @@
             <enclosure url="https://github.com/angusjune/Popppular/releases/download/v0.9/popppular.zip" sparkle:version="0.9" length="1072667" type="application/octet-stream" />
             <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
         </item>
+		
         <item>
             <title>Version 0.8.1</title>
             <sparkle:releaseNotesLink>https://rawgit.com/angusjune/Popppular/master/updater/ReleaseNotes.html</sparkle:releaseNotesLink>
