@@ -31,7 +31,7 @@ a {
   text-align: center;
   height: 35px;
   position: fixed;
-  margin-bottom: 4px;
+  margin-bottom: 0;
   z-index: 999999;
   border-bottom: 1px solid rgba(0, 0 ,0 ,0.05);
 }
@@ -179,7 +179,7 @@ a {
   -webkit-flex-flow: column wrap;
   -webkit-justify-content: center;
   -webkit-flex-direction: row;
-  padding: 39px 0 4px 0;
+  padding: 35px 0 4px 0;
 }
 
 .shot {
