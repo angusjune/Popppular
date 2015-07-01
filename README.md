@@ -4,7 +4,7 @@ Dribbble popular shots right at your MenuBar.
 [Download popppular.app][dl]
 
 ### Last updated on
-Jul 1, 2015. v0.9.2
+Jul 1, 2015. v0.9.3
 
 ### How to install?
 [Download][dl], unzip, and drag `popppular.zip` into your Applications/ folder
