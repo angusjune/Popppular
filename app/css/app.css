@@ -179,14 +179,14 @@ a {
   -webkit-flex-flow: column wrap;
   -webkit-justify-content: center;
   -webkit-flex-direction: row;
-  padding: 39px 2px 4px 2px;
+  padding: 39px 0 4px 0;
 }
 
 .shot {
   position: relative;
   width: 100%;
   min-height: 238px;
-  border: 2px solid #fff;
+  /*border: 2px solid #fff;*/
   cursor: pointer;
   background: url(../img/loading.gif) #fff no-repeat center;
   background-size: 16px;
