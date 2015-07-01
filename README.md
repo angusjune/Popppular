@@ -4,7 +4,7 @@ Dribbble popular shots right at your MenuBar.
 [Download popppular.app][dl]
 
 ### Last updated on
-Jun 24, 2015. v0.9.2
+Jul 1, 2015. v0.9.2
 
 ### How to install?
 [Download][dl], unzip, and drag `popppular.zip` into your Applications/ folder
@@ -19,5 +19,5 @@ In your XCode, Product -> Archive -> Export
 Loading new shots when scrolled to the end is not supported currently. But actually, you are seeing more shots than the previous version at a time.
 
 
-[dl]: https://github.com/angusjune/Popppular/releases/download/v0.9.2/popppular.zip
+[dl]: https://github.com/angusjune/Popppular/releases/download/v0.9.3/popppular.zip
 [qk]: https://github.com/HackPlan/quark-shell-mac
