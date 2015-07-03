@@ -2,3 +2,6 @@ node_modules
 .idea
 .sass-cache
 .DS_Store
+Pods
+*.xcodeproj
+*.xcworkspace
