@@ -28,8 +28,8 @@ $(function() {
     }
   });
 
-  $('#checkUpdate').click(function() {
-    quark.checkUpdate('https://rawgit.com/angusjune/popppular/master/updater/Appcast.xml');
-  });
+  // $('#checkUpdate').click(function() {
+  //   quark.checkUpdate('https://rawgit.com/angusjune/popppular/master/updater/Appcast.xml');
+  // });
 
 });
