@@ -273,19 +273,21 @@ a {
   -webkit-flex-direction: column;
 }
 
+
+.preferences a {
+  color: #E84F89;
+}
+
 .preferences .item {
   text-align: center;
   margin-bottom: 15px;
+  font-size: 12px;
+  color: #666;
+  margin-left: 2px;
 }
 
 .preferences .item:last-of-type {
   margin-bottom: 0;
-}
-
-.label {
-  font-size: 12px;
-  color: #666;
-  margin-left: 2px;
 }
 
 .input {
